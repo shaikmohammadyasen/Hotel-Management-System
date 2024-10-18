@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register New Account</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Hotel Room Booking System</h1>
+    </div>
+    <div class="login-info">
+    <h2>Create a New Account</h2>
+    <form action="register_process.php" method="POST" class="login-form">
+        <label for="username">Username: </label>
+        <input type="text"id="username"name="username"><br><br>
+        <label for="mobile">Mobile Num: </label>
+        <input type="tel" id="mobile" name="mobile" >
+        <br><br>
+        <label for="email">Email Id: </label>
+        <input type="text" id="email" name="email" required><br><br>
+        <label for="password">Password: </label>
+        <input type="password" id="password" name="password" required><br><br>
+        <input type="submit" value="Register" onclick="login()">
+
+    </form>
+    <script>
+        function login() {
+            alert("The User registered successfully")
+        }
+    </script>
+</div>
+</body>
+</html>

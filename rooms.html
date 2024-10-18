@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Room Selection</title>
+    <style>
+        body
+        {
+            background: linear-gradient(360deg, rgb(245, 255, 245) 0%, rgb(144, 240, 99) 100%);
+            background-color: rgb(234, 112, 215);
+            align-items:center;
+     	    display:flex;
+     	    height:100vh;
+     	    justify-content:center;
+        }
+        img{
+            width: 140px;
+            height: 140px;
+        }
+        form
+       {
+     	background-color: rgb(204, 209, 152);
+     	border-radius:20px;
+     	box-sizing: border-box;
+     	width:300px;
+     	height:500px;
+        padding:40px;
+       }
+       button
+       {
+     	background-color: grey;
+     	height:10%;
+        width:100%;
+        border-radius:20px;
+        cursor:pointer;
+       }
+        
+    </style>
+</head>
+<body>
+    <h2 text-align="center">Select a Room</h2> 
+    <form action="Roomdetails1.html" method="get"> 
+    <div class="room" id="room1">
+        <img src="https://content3.jdmagicbox.com/comp/jaipur/e5/0141px141.x141.191017040611.s9e5/catalogue/low-cost-hotel-siddharth-nagar-jaipur-hotels-kxeftla05h.jpg" alt="Room 1">
+        <h3>Standard Room </h3>
+        <p>Description: This room features a bed, a private bathroom, and Desks</p>
+        <input type="hidden" name="room" value="1">
+        <button type="submit">View Details</button>   
+    </div>
+    </form>
+    <form action="Roomdetails2.html" method="get">
+    <div class="room" id="room2">
+        <img src="https://png.pngtree.com/thumb_back/fh260/background/20220311/pngtree-bedroom-guest-room-five-star-hotel-image_990205.jpg" alt="Room 2">
+        <h3>Deluxe Room</h3>
+        <p>Description: This room offers king size bed, a mini kitchen, and a balcony overlooking the garden.</p>
+        <input type="hidden" name="room" value="2">
+        <button type="submit">View Details</button>
+    </div>
+    </form>
+    <form action="Roomdetails3.html" method="get">
+    <div class="room" id="room3">
+        <img src=" https://i.insider.com/5db9a47d045a31328a5b6fde?width=1000&format=jpeg&auto=webp" alt="Room 2">
+        <h3>Suite Room</h3>
+        <p>Description: This room offers 2 queen size bed, a mini kitchen, amazing furniture and a balcony with city view</p>
+        <input type="hidden" name="room" value="3">
+        <button type="submit">View Details</button>
+    </div>
+    </form>
+    
+</body>
+</html>

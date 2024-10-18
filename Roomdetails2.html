@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Deluxe Room Details</title>
+    <style>
+        body{
+            background: linear-gradient(360deg, rgb(245, 255, 245) 0%, rgb(123, 188, 231) 100%);
+            background-color: rgb(234, 112, 215);
+            align-items:center;
+     	    display:flex;
+     	    height:100vh;
+     	    justify-content:center;
+        }
+        form
+       {
+     	background-color: rgb(204, 209, 152);
+     	border-radius:20px;
+     	box-sizing: border-box;
+     	width:320px;
+     	height:540px;
+        padding:40px;
+       }
+        img{
+            width: 170px;
+            height: 170px;
+        }
+        button
+       {
+     	background-color: grey;
+     	height:10%;
+        width:100%;
+        border-radius:20px;
+        cursor:pointer;
+       }
+    </style>
+</head>
+<body>
+    <div class="room-details">
+        <form action="confirm.html" method="get"><h1><b>Deluxe Room</b></h1>
+        <img src="https://png.pngtree.com/thumb_back/fh260/background/20220311/pngtree-bedroom-guest-room-five-star-hotel-image_990205.jpg" alt="Room 1">
+         
+        <p>Beds : 1(king)</p>
+        <p>Bathrooms: 1</p>
+        <p>AC/Non-AC :AC</p>
+        <p>Available rooms: 20</p>
+        <p>Price  : $200  per day</p>
+        <input type="hidden" name="room" value="1">
+        <button type="submit">Confirm Booking</button>
+        </form>
+    </div>
+
+</body>
+</html>

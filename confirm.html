@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking Confirmation with Payment</title>
+    <style>
+        body{
+            background: linear-gradient(360deg, rgb(245, 255, 245) 0%, rgb(45, 136, 131) 100%);
+        }
+        form
+       {
+     	background-color: rgb(93, 80, 124);
+     	border-radius:20px;
+     	box-sizing: border-box;
+     	width:320px;
+     	height:540px;
+        padding:40px;
+       }
+       button
+       {
+     	background-color: rgb(129, 214, 55);
+     	height:10%;
+        width:100%;
+        border-radius:20px;
+        cursor:pointer;
+       }
+    </style>
+</head>
+<body>
+    <h1>Booking Confirmation</h1>
+    <p>Please fill out the form to confirm your booking and make a payment.</p>
+
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="booking_details">Booking Details:</label>
+        <textarea id="booking_details" name="booking_details" required></textarea><br><br>
+        <label for="check-in">Check-in Date:</label>
+        <input type="date" id="check-in" name="check-in" required><br><br>
+
+        <label for="check-out">Check-out Date:</label>
+        <input type="date" id="check-out" name="check-out" required><br><br>
+        <label for="amount">Payment Amount:</label>
+        <input type="text" id="amount" name="amount" required><br><br>
+
+        <input type="hidden" name="business" value="your_google_email@example.com">
+        <input type="hidden" name="cmd" value="_xclick">
+        <input type="hidden" name="item_name" value="Booking Payment">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="no_note" value="1">
+        <input type="hidden" name="return" value="payment_success.php">
+        <input type="hidden" name="cancel_return" value="payment_cancel.php">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

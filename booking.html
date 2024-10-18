@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <title>Hotel Room Reservation</title>
+</head>
+<body>
+    <header>
+        <h1>Hotel Room Reservation</h1>
+    </header>
+    <section class="reservation-form">
+        <h2>Make a Reservation</h2>
+        <form action="reservation.php" method="POST">
+            <label for="check-in">Check-in Date:</label>
+            <input type="date" id="check-in" name="check-in" required>
+
+            <label for="check-out">Check-out Date:</label>
+            <input type="date" id="check-out" name="check-out" required>
+
+            <label for="room-type">Room Type:</label>
+            <select id="room-type" name="room-type" required>
+                <option value="standard">Standard Room</option>
+                <option value="deluxe">Deluxe Room</option>
+                <option value="suite">Suite</option>
+            </select>
+
+            <button type="submit">Check Availability</button>
+        </form>
+    </section>
+
+    <section class="available-rooms">
+        <h2>Available Rooms</h2>
+        <!-- Display available rooms based on user input -->
+        <div class="room-card">
+            <img src="room1.jpg" alt="Standard Room">
+            <h3>Standard Room</h3>
+            <p>Starting at $100 per night</p>
+            <button>Book Now</button>
+        </div>
+        <div class="room-card">
+            <img src="room2.jpg" alt="Deluxe Room">
+            <h3>Deluxe Room</h3>
+            <p>Starting at $150 per night</p>
+            <button>Book Now</button>
+        </div>
+        <div class="room-card">
+            <img src="room3.jpg" alt="Suite">
+            <h3>Suite</h3>
+            <p>Starting at $200 per night</p>
+            <button>Book Now</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Hotel Reservation System</p>
+    </footer>
+</body>
+</html>

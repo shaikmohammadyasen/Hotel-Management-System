@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="header">
+        <h1>HotelRoom Booking System</h1>
+    </div>
+    <div class="navbar">
+        <a href="login.html">Home</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="booking.html">Bookings</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="aboutus.html">About Us</a>
+    </div>
+    <div class="content">
+        
+    </div>
+    <div class="login-info">
+        <form class="login-form">
+            <h2>Login</h2>
+            <div class="input-container">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username"><br><br><br>
+            </div>
+            <div class="input-container">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"><br><br><br>
+            </div>
+            <div class="center-button">
+                <button type="submit"  style="margin-right: 10px;" onclick="show()">Login</button>
+            </form>
+            <script>
+                function show() {
+                    alert("The user Login was Sucessfull")
+                }
+            </script>   
+<p>Don't have an account? <a href="register.html">Register here</a></p>
+    </div>
+</div>
+</body>
+</html>

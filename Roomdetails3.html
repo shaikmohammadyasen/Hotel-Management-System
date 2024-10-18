@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Suite Room Details</title>
+    <style>
+        body{
+            background: linear-gradient(360deg, rgb(245, 255, 245) 0%, rgb(123, 188, 231) 100%);
+            background-color: rgb(234, 112, 215);
+            align-items:center;
+     	    display:flex;
+     	    height:100vh;
+     	    justify-content:center;
+        }
+        form
+       {
+     	background-color: rgb(204, 209, 152);
+     	border-radius:20px;
+     	box-sizing: border-box;
+     	width:320px;
+     	height:540px;
+        padding:40px;
+       }
+        img{
+            width: 170px;
+            height: 170px;
+        }
+        button
+       {
+     	background-color: grey;
+     	height:10%;
+        width:100%;
+        border-radius:20px;
+        cursor:pointer;
+       }
+    </style>
+</head>
+<body>
+    <div class="room-details">
+        <form action="confirm.html" method="get"><h1><b>Suite Room</b></h1>
+        <img src="https://i.insider.com/5db9a47d045a31328a5b6fde?width=1000&format=jpeg&auto=webp" alt="Room 1">
+         
+        <p>Beds : 1(Queen)</p>
+        <p>Bathrooms: 2</p>
+        <p>AC/Non-AC :AC(central)</p>
+        <p>Available rooms: 10</p>
+        <p>Price  : $300  per day</p>
+        <input type="hidden" name="room" value="1">
+        <button type="submit">Confirm Booking</button>
+        </form>
+    </div>
+
+</body>
+</html>
