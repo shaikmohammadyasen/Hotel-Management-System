@@ -1,4 +1,4 @@
-# websiterepo this is a detailed description
+# A detailed description 
 Website for Hotel Management System  🌐  
 This is a fully functional "Hotel Management System" website designed to streamline hotel operations. The project features a user-friendly front-end built with HTML, CSS, and JavaScript, complemented by a robust back-end developed in Java.  
 
